@@ -1,0 +1,8 @@
+target
+# ignore eclipse configuration files
+.classpath
+.project
+.settings
+
+# ignore jRebel configuration file
+rebel.xml

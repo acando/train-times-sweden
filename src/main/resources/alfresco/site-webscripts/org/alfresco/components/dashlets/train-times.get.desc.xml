@@ -1,0 +1,6 @@
+<webscript>
+   <shortname>Tågtider</shortname>
+   <description>Visar realtidsavgångstider för tåg i Sverige för valfri ort.</description>
+   <url>/components/dashlets/uk-train-times</url>
+   <family>dashlet</family>
+</webscript>

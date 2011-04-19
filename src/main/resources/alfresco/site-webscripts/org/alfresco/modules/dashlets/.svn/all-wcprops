@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/171/trunk/Train%20Times%20Dashlet/config/alfresco/site-webscripts/org/alfresco/modules/dashlets
+END
+train-stations-data.get.js
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/!svn/ver/171/trunk/Train%20Times%20Dashlet/config/alfresco/site-webscripts/org/alfresco/modules/dashlets/train-stations-data.get.js
+END
+train-stations-data.get.json.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/!svn/ver/171/trunk/Train%20Times%20Dashlet/config/alfresco/site-webscripts/org/alfresco/modules/dashlets/train-stations-data.get.json.ftl
+END
+train-stations-data.get.desc.xml
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/!svn/ver/171/trunk/Train%20Times%20Dashlet/config/alfresco/site-webscripts/org/alfresco/modules/dashlets/train-stations-data.get.desc.xml
+END
+train-times-config.get.html.ftl
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/!svn/ver/171/trunk/Train%20Times%20Dashlet/config/alfresco/site-webscripts/org/alfresco/modules/dashlets/train-times-config.get.html.ftl
+END
+train-times-config.get.properties
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/!svn/ver/171/trunk/Train%20Times%20Dashlet/config/alfresco/site-webscripts/org/alfresco/modules/dashlets/train-times-config.get.properties
+END
+train-times-config.get.js
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/!svn/ver/171/trunk/Train%20Times%20Dashlet/config/alfresco/site-webscripts/org/alfresco/modules/dashlets/train-times-config.get.js
+END
+train-times-config.get.desc.xml
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/!svn/ver/171/trunk/Train%20Times%20Dashlet/config/alfresco/site-webscripts/org/alfresco/modules/dashlets/train-times-config.get.desc.xml
+END
