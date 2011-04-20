@@ -16,20 +16,21 @@
 				<artifactId>yuicompressor-maven-plugin</artifactId>
 				<version>1.1</version>
 				<executions>
-          	      <execution>
-          	       <phase>package</phase>
-                   <goals>
-		              <goal>compress</goal>
-		            </goals>
-		          </execution>
-		        </executions>        
-		        <configuration>
-		          <excludes>
-		          	<exclude>**/*.post.js</exclude>
-		            <exclude>**/*.get.js</exclude>
-		            <exclude>**/*.css</exclude>
-		          </excludes>
-		        </configuration>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>compress</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<excludes>
+						<!-- Lets exclude the server side js:s and the css:s -->
+						<exclude>**/*.post.js</exclude>
+						<exclude>**/*.get.js</exclude>
+						<exclude>**/*.css</exclude>
+					</excludes>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
@@ -54,13 +55,13 @@
 			<version>1.0.0-RC2</version>
 			<scope>provided</scope>
 		</dependency>
-	
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
-		<!-- Spring Surf dependencies are available via proxy via maven.alfresco.com so just add them below -->
+		<!-- Spring Surf dependencies are available via proxy via maven.alfresco.com 
+			so just add them below -->
 	</dependencies>
 </project>
