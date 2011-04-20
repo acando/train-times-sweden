@@ -194,7 +194,7 @@
       init: function TrainTimes_init()
       {
          // Set the title
-         if (this.options.station != "")
+         if (this.options.station !== "")
          {
             this.titleContainer.innerHTML = this.msg("header.departures", this.options.station);
          }
@@ -207,7 +207,7 @@
          {
             this.dataTable.destroy();
          }
-         if (this.options.station != "")
+         if (this.options.station !== "")
          {
             this.loadData();
             this.setMessage(); // Hide any message text
@@ -245,11 +245,12 @@
        */
       loadData: function TrainTimes_loadData()
       {
-    	  
     	  function isEmpty(ob){
-    		   for(var i in ob){ return false;}
+    	    for(var i in ob){ 
+    		  return false;
+    		}
     		  return true;
-    	  }
+    	    }
 
     	  var formatBerTid = function(elCell, oRecord, oColumn, sData) { 
      		 //elCell.innerHTML = (isEmpty(sData)) ? "i tid" : YAHOO.util.Date.format(sData, '%T'); 
@@ -318,9 +319,7 @@
                 var html = "";
                 for ( var i = 0; i < oResponse.meta.updates.length; i++)
                 {
-                   html += "<div class=\"update\">" +
-                      me._htmlDecode(oResponse.meta.updates[i].text) +
-                      "</div>";
+                   html += "<div class=\'update\'>" + me._htmlDecode(oResponse.meta.updates[i].text) + "</div>";
                 }
                 me.updatesContainer.innerHTML = html;
                 Dom.setStyle(me.updatesContainer, "display", "block");
@@ -434,7 +433,7 @@
 
                      // Custom AutoComplete result formatter
                      var formatResult = function(oResultData, sQuery, sResultMatch) {
-                         return oResultData.namn
+                         return oResultData.namn;
                      };
 
                      // Custom event handler to ensure the name gets saved, not the code
@@ -453,13 +452,6 @@
                      oAC.resultTypeList = false;
                      oAC.formatResult = formatResult;
                      oAC.itemSelectEvent.subscribe(myHandler);
-
-                     // Instantiate the via AutoComplete
-                     //var viaAC = new YAHOO.widget.AutoComplete(this.configDialog.id + "-via", this.configDialog.id + "-via-select", oDS);
-                     //viaAC.useShadow = true;
-                     //viaAC.resultTypeList = false;
-                     //viaAC.formatResult = formatResult;
-                     //viaAC.itemSelectEvent.subscribe(myHandler);
                   },
                   scope: this
                }
